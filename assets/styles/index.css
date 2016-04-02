@@ -22,7 +22,7 @@ body {
   width: 100%;
   font-family: 'MarkOT',sans-serif;
   text-align: center;
-  background-color: #9B00FF;
+  background-color: #828CA8;
   color: white;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .wrapper .content h1 {
   font-size: 72px;
-  text-shadow: 1px 4px 4px rgba(0,0,0,0.5);
+  text-shadow: 1px 4px 4px rgba(0,0,0,0.25);
 }
 
 .wrapper .content .marks {
@@ -52,8 +52,8 @@ body {
 .wrapper .content .marks img {
   max-height: 30px;
   margin: 0 34px;
-  -webkit-filter: drop-shadow(1px 4px 3px rgba(0,0,0,0.5));
-  filter: drop-shadow(1px 4px 3px rgba(0,0,0,0.5));
+  -webkit-filter: drop-shadow(1px 4px 3px rgba(0,0,0,0.25));
+  filter: drop-shadow(1px 4px 3px rgba(0,0,0,0.25));
   text-decoration: none;
 }
 
