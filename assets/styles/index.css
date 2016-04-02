@@ -22,7 +22,7 @@ body {
   width: 100%;
   font-family: 'MarkOT',sans-serif;
   text-align: center;
-  background-color: #FA4616; //#9B00FF; //#828CA8;
+  background-color: #9B00FF;
   color: white;
 }
 
@@ -59,4 +59,21 @@ body {
 
 .wrapper .content .marks img:hover {
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 750px) {
+  .wrapper .content h1 {
+    font-size: 50px;
+  }
+
+  .wrapper .content .marks img {
+    max-height: 25px;
+    margin: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 750px), only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .wrapper .content {
+    width: 90vw;
+  }
 }
