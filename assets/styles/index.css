@@ -84,3 +84,9 @@ body {
     width: 90vw;
   }
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .wrapper .content {
+    margin-top: -10vh;
+  }
+}
