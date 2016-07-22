@@ -32,7 +32,7 @@ main:before {
 main section {
   display: inline-block;
   vertical-align: middle;
-  width: 500px;
+  width: 600px;
 }
 
 main section h1 {
@@ -65,7 +65,7 @@ main section .marks img {
 
   main section .marks img {
     max-height: 25px;
-    margin: 0 20px;
+    margin: 0 15px;
   }
 }
 
