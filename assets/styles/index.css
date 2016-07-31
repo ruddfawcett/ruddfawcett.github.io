@@ -18,8 +18,6 @@ body {
   text-align: center;
   background-color: #0089FF;
   color: white;
-  -webkit-transition: background 0.5s ease;
-  transition: background 0.5s ease;
 }
 
 main:before {
@@ -54,8 +52,7 @@ main section .marks img {
   height: 30px;
   margin: 0 34px;
   text-decoration: none;
-  -webkit-transition: height 0.5s ease;
-  transition: height 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media only screen and (max-width: 750px) {
