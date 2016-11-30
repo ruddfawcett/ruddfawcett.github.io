@@ -36,7 +36,8 @@ img {
 }
 
 .links {
-  margin: 40px auto;
+  margin: 50px auto;
+  padding-bottom: 50px;
   max-width: 600px;
 }
 
