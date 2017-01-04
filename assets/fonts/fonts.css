@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Tofino';
+    src: url('tofino-ultra.woff2') format('woff2'),
+         url('tofino-ultra.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Affogato';
+    src: url('affogato-regular.woff2') format('woff2'),
+         url('affogato-regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}

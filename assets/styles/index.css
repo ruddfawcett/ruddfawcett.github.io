@@ -1,79 +1,100 @@
-@font-face {
-  font-family: 'FreightSans Pro';
-  src: url('../fonts/FreightSansPro-Bold.woff2') format('woff2'),
-       url('../fonts/FreightSansPro-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
+@import url("../fonts/fonts.css");
 
 * {
   margin: 0;
   padding: 0;
+  transition: all 0.2s ease;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   height: 100%;
   width: 100%;
-  font-family: 'FreightSans Pro', 'PT Sans', sans-serif;;
-  text-align: center;
-  background-color: #0089FF;
-  color: white;
+  background: #35495d;
+  /*background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 50%, #35495d 50%, #35495d 100%);
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 50%,#35495d 50%,#35495d 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 50%,#35495d 50%,#35495d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#35495d',GradientType=0 );*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Affogato', sans-serif;
 }
 
-main:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100vh;
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
+  font-family: 'Tofino', sans-serif;
+  font-weight: 900;
 }
 
 main section {
-  display: inline-block;
-  vertical-align: middle;
-  width: 600px;
+  background: #35495D;
+  padding: 75px 150px;
 }
 
-main section h1 {
-  font-size: 72px;
+main section:first-child {
+  background: white;
+  padding: 150px;
 }
 
-main section .marks {
-  margin-top: 10px;
-  padding: 10px 0;
-  margin: 0 auto;
+main section:first-child h1 {
+  font-size: 80px;
+  line-height: 80px;
+  color: #35495D;
+  letter-spacing: 5px;
 }
 
-main section .marks a {
-  height: 50px;
-  display: inline-block;
+main section h3 {
+  color: white;
+  letter-spacing: 2.5px;
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
-main section .marks img {
-  height: 30px;
-  margin: 0 34px;
+main section:first-child a {
+  color: #99A4AE;
   text-decoration: none;
-  transition: all 0.5s ease;
+  border-bottom: 2px dotted white;
+}
+
+main section:first-child a:hover {
+  border-bottom: 2px dotted #99A4AE;
+}
+
+main section ul {
+  list-style: none;
+}
+
+main section ul li {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #99A4AE;
+  letter-spacing: 2px;
+}
+
+main section p {
+  color: white;
+  font-size: 26px;
 }
 
 @media only screen and (max-width: 750px) {
-  main section h1 {
-    font-size: 50px;
+  main section:first-child {
+    padding: 20% 10%;
   }
 
-  main section .marks img {
-    max-height: 25px;
-    margin: 0 15px;
+  main section:first-child h1 {
+    font-size: 60px;
+    line-height: 65px;
+    margin-bottom: 0;
   }
-}
 
-@media only screen and (max-width: 750px), only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  main section ul li {
+    font-size: 40px;
+  }
+
   main section {
-    width: 90vw;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-  main section {
-    margin-top: -10vh;
+    padding: 10% 50px;
   }
 }
