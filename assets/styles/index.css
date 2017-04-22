@@ -37,7 +37,7 @@ main section:first-child h1 {
   font-size: 60px;
   line-height: 60px;
   color: #031927;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 main section h3 {
@@ -80,13 +80,15 @@ main section p {
   }
 
   main section:first-child h1 {
-    font-size: 60px;
-    line-height: 65px;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: 1px;
     margin-bottom: 0;
   }
 
   main section ul li {
-    font-size: 40px;
+    font-size: 25px;
+    letter-spacing: 1px;
   }
 
   main section {
