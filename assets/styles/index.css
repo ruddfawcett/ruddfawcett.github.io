@@ -13,7 +13,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: #35495d;
+  background: white;
   /*background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 50%, #35495d 50%, #35495d 100%);
   background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 50%,#35495d 50%,#35495d 100%);
   background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 50%,#35495d 50%,#35495d 100%);
@@ -30,19 +30,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 main section {
-  background: #35495D;
   padding: 75px 150px;
 }
 
 main section:first-child {
-  background: white;
   padding: 150px;
 }
 
 main section:first-child h1 {
-  font-size: 80px;
-  line-height: 80px;
-  color: #35495D;
+  font-size: 60px;
+  line-height: 60px;
+  color: #031927;
   letter-spacing: 5px;
 }
 
@@ -60,7 +58,7 @@ main section:first-child a {
 }
 
 main section:first-child a:hover {
-  border-bottom: 2px dotted #99A4AE;
+  border-bottom: 2px dotted #E8E9EB;
 }
 
 main section ul {
@@ -68,10 +66,11 @@ main section ul {
 }
 
 main section ul li {
-  font-size: 60px;
-  text-transform: uppercase;
-  color: #99A4AE;
+  font-size: 40px;
+  /*text-transform: uppercase;*/
+  color: #E8E9EB;
   letter-spacing: 2px;
+  display: inline-block;
 }
 
 main section p {
