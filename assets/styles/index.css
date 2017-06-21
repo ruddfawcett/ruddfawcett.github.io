@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  transition: all 0.2s ease;
+  /*transition: all 0.2s ease;*/
 }
 
 html {
@@ -16,13 +16,11 @@ body {
   background: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  text-transform: uppercase;
-  font-family: 'Tofino', sans-serif;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 main section {
@@ -34,10 +32,11 @@ main section:first-child {
 }
 
 main section:first-child h1 {
-  font-size: 60px;
+  font-size: 3rem;
   line-height: 60px;
-  color: #031927;
+  color: #414EF9;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 main section h3 {
@@ -47,14 +46,15 @@ main section h3 {
 }
 
 main section:first-child a {
-  color: #D0D0D0;
+  color: #292E31;
   text-decoration: none;
+  font-weight: 300;
   padding-bottom: 3px;
   border-bottom: 3px solid white;
 }
 
 main section:first-child a:hover {
-  border-bottom: 3px solid #74C2F1;
+  color: #414EF9;
 }
 
 main section ul {
@@ -62,9 +62,8 @@ main section ul {
 }
 
 main section ul li {
-  font-size: 30px;
+  font-size: 1.5rem;
   padding-right: 6px;
-  color: #E8E9EB;
   letter-spacing: 2px;
   display: inline-block;
 }
@@ -83,7 +82,7 @@ main section p {
     font-size: 50px;
     line-height: 55px;
     letter-spacing: 1px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   main section ul li {
