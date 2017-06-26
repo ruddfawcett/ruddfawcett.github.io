@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  /*transition: all 0.2s ease;*/
 }
 
 html {
@@ -13,14 +12,16 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
+  color: #292E31;
+  font-weight: 300;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 main section {
@@ -32,24 +33,30 @@ main section:first-child {
 }
 
 main section:first-child h1 {
+  font-weight: 500;
   font-size: 3rem;
   color: #414EF9;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
 }
 
 main section h3 {
-  color: white;
-  letter-spacing: 2.5px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+main section p {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 main section:first-child a {
-  color: #292E31;
   text-decoration: none;
-  font-weight: 300;
   padding-bottom: 3px;
   border-bottom: 3px solid white;
+}
+
+main section:first-child a:visited {
+  color: #292E31;
 }
 
 main section:first-child a:hover {
@@ -63,16 +70,10 @@ main section ul {
 main section ul li {
   font-size: 1.5rem;
   padding-right: 6px;
-  letter-spacing: 2px;
   display: inline-block;
 }
 
-main section p {
-  color: white;
-  font-size: 26px;
-}
-
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 620px) {
   main section:first-child {
     padding: 20% 15%;
   }
@@ -83,7 +84,7 @@ main section p {
     margin-bottom: 10px;
   }
 
-  main section ul li {
+  main section h3 {
     font-size: 1.1rem;
     letter-spacing: 1px;
   }
