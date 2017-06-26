@@ -74,17 +74,17 @@ main section p {
 
 @media only screen and (max-width: 750px) {
   main section:first-child {
-    padding: 20% 10%;
+    padding: 20% 15%;
   }
 
   main section:first-child h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     letter-spacing: 1px;
     margin-bottom: 10px;
   }
 
   main section ul li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
   }
 
