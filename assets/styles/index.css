@@ -33,7 +33,6 @@ main section:first-child {
 
 main section:first-child h1 {
   font-size: 3rem;
-  line-height: 60px;
   color: #414EF9;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -79,14 +78,13 @@ main section p {
   }
 
   main section:first-child h1 {
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 2.4rem;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   main section ul li {
-    font-size: 25px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
 
