@@ -43,6 +43,10 @@ main section h3 {
   font-size: 1.5rem;
 }
 
+main section a {
+  color: #292E31;
+}
+
 main section p {
   margin-top: 50px;
   font-size: 1.2rem;
@@ -81,12 +85,12 @@ main section ul li {
   main section:first-child h1 {
     font-size: 2.2rem;
     letter-spacing: 1px;
-    margin-bottom: 10px;
   }
 
   main section h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     letter-spacing: 1px;
+    margin-top: 15px;
   }
 
   main section {
