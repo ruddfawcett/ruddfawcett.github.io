@@ -10,90 +10,42 @@ html {
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  min-height: 100%;
   font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
-  color: #292E31;
-  font-weight: 300;
+  color: #312F32;
+  padding: 12% 10% 20px 10%;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 300;
-  letter-spacing: 2px;
+h1 {
+  font-size: 40px;
+  margin-bottom: 80px;
 }
 
-main section {
-  padding: 75px 150px;
+p {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 38px;
+  max-width: 650px;
 }
 
-main section:first-child {
-  padding: 150px;
-}
-
-main section:first-child h1 {
-  font-weight: 500;
-  font-size: 3rem;
-  color: #414EF9;
-}
-
-main section h3 {
-  margin-top: 20px;
-  font-size: 1.5rem;
-}
-
-main section a {
-  color: #292E31;
-}
-
-main section p {
-  margin-top: 50px;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-}
-
-main section:first-child a {
+a {
   text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 3px solid white;
-}
-
-main section:first-child a:visited {
-  color: #292E31;
-}
-
-main section:first-child a:hover {
-  color: #414EF9;
-}
-
-main section ul {
-  list-style: none;
-}
-
-main section ul li {
-  font-size: 1.5rem;
-  padding-right: 6px;
-  display: inline-block;
+  color: #73A1D0;
 }
 
 @media only screen and (max-width: 620px) {
-  main section:first-child {
-    padding: 20% 15%;
+  body {
+    padding: 20% 10% 20px 10%;
   }
 
-  main section:first-child h1 {
-    font-size: 2.2rem;
-    letter-spacing: 1px;
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
   }
 
-  main section h3 {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    margin-top: 15px;
-  }
-
-  main section {
-    padding: 10% 50px;
+  p {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
