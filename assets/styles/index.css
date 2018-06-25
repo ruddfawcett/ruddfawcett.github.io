@@ -1,79 +1,49 @@
-@font-face {
-  font-family: 'FreightSans Pro';
-  src: url('../fonts/FreightSansPro-Bold.woff2') format('woff2'),
-       url('../fonts/FreightSansPro-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
+html {
   height: 100%;
-  width: 100%;
-  font-family: 'FreightSans Pro', 'PT Sans', sans-serif;;
-  text-align: center;
-  background-color: #0089FF;
-  color: white;
 }
 
-main:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100vh;
+body {
+  min-height: 100%;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
+  color: #312F32;
+  padding: 12% 10% 20px 10%;
 }
 
-main section {
-  display: inline-block;
-  vertical-align: middle;
-  width: 600px;
+h1 {
+  font-size: 40px;
+  margin-bottom: 80px;
 }
 
-main section h1 {
-  font-size: 72px;
+p {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 38px;
+  max-width: 650px;
 }
 
-main section .marks {
-  margin-top: 10px;
-  padding: 10px 0;
-  margin: 0 auto;
-}
-
-main section .marks a {
-  height: 50px;
-  display: inline-block;
-}
-
-main section .marks img {
-  height: 30px;
-  margin: 0 34px;
+a {
   text-decoration: none;
-  transition: all 0.5s ease;
+  color: #73A1D0;
 }
 
-@media only screen and (max-width: 750px) {
-  main section h1 {
-    font-size: 50px;
+@media only screen and (max-width: 620px) {
+  body {
+    padding: 20% 10% 20px 10%;
   }
 
-  main section .marks img {
-    max-height: 25px;
-    margin: 0 15px;
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
   }
-}
 
-@media only screen and (max-width: 750px), only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-  main section {
-    width: 90vw;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-  main section {
-    margin-top: -10vh;
+  p {
+    font-size: 18px;
+    line-height: 28px;
   }
 }

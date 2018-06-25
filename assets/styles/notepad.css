@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10%;
+  background-color: #282C34;
+  color: #A4ABB8;
+  font-family: "SFMono-Regular", "Menlo", Courier, "Monaco", monospace;
+  word-wrap: break-word;
+}
+
+.editor {
+  max-width: 600px;
+}
+
+h1 {
+  color: #D36770;
+  font-size: 32px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+b {
+  color: #DBAA79;
+}
+
+i {
+  color: #C678DD;
+}
+
+code {
+  font-family: "SFMono-Regular", "Menlo", "Monaco", monospace;
+  color: #95C077;
+}
+
+a {
+  color: #C678DD;
+}
+
+a.mask {
+  color: #72BEF2;
+  text-decoration: none;
+}
