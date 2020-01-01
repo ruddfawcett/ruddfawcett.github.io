@@ -6,7 +6,7 @@
 body {
   font-family: -apple-system, Arial, Helvetica, sans-serif;
   text-align: center;
-  /* background-color: black; */
+  font-size: 18px;
 }
 
 .container {
@@ -27,18 +27,16 @@ a, a:visited {
 h1 {
   font-size: 46px;
   line-height: 60px;
-  margin: 60px 0;
+  margin-bottom: 60px;
 }
 
 h2 {
   font-size: 32px;
   line-height: 38px;
-  padding-right: 12px;
-  display: inline-block;
-}
-
-h2:hover {
-  cursor: help;
+  /* line-height: 42px; */
+  display: inline;
+  vertical-align: baseline;
+  padding-right: 24px;
 }
 
 h3 {
@@ -50,50 +48,26 @@ h3 {
   padding-right: 6px;
 }
 
-h1 sup {
-  display: inline;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 20px;
-  padding-left: 4px;
-}
-
-h2 sup {
-  display: inline;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 14px;
-  padding-left: 4px;
-}
-
 p {
   line-height: 20px;
   display: table;
   padding: 4px 0 1px 0;
+  /* padding-left: 0.8em; */
+  /* text-indent:-0.8em; */
 }
 
-.highlight {
-  font-family: serif;
-  font-size: 35px;
+.detail {
+  display: none;
 }
 
-h2.active {
-  color: white;
+p ~ h3 {
+  padding-top: 48px;
 }
 
 .row {
+  /* display: flex; */
+  /* border-top: 1px solid rgba(0,0,0,0.1); */
   padding: 20px 40px;
-}
-
-.row.spotlight {
-  padding: 60px 0;
-}
-
-.row.spotlight iframe {
-  outline: none;
-  border: none;
-  width: 100%;
-  height: auto;
 }
 
 .row:first-child {
@@ -118,11 +92,9 @@ img {
 
 ::selection {
   background: yellow;
-  padding-left: 12px;
 }
 ::-moz-selection {
   background: yellow;
-  padding-left: 12px;
 }
 
 @media (max-width: 1070px) {
@@ -133,10 +105,5 @@ img {
   h1 {
     font-size: 32px;
     line-height: 40px;
-  }
-
-  h2 {
-    font-size: 24px;
-    line-height: 28px;
   }
 }
