@@ -12,13 +12,10 @@
       </div>
       <div class='row'>
         <h3>Apps</h3>
-        <h2>Study Savior<sup>S19</sup></h2>
+        <!-- <h2>Study Savior<sup>S19</sup></h2> -->
         <h2 class='highlight' data-info='Chineasy Story Builder is a project created for langauge learning company Chineasy.'>Chineasy Story Builder<sup>W17</sup></h2>
         <h2 class='highlight'>PraisePop<sup>F15</sup></h2>
         <h2 class=''>Schedules<sup>F14&ndash;S15</sup></h2>
-        <!-- <div class='row spotlight'>
-          <h1 class='content'>is a project created for langauge learning company Chineasy.</h1>
-        </div> -->
         <h2>Glyphish Gallery<sup>S14</sup></h2>
         <h2 class='highlight'>MyPebbleFaces<sup>W13</sup></h2>
       </div>
@@ -39,7 +36,8 @@
         <h3>Design</h3>
         <h2>Column<sup>F19</sup></h2>
         <h2>Radiation Exposure<sup>F19</sup></h2>
-        <h2>Juke<sup>S19</sup></h2>
+        <h2>Van Sinderen<sup>F19</sup></h2>
+        <h2 class='highlight'>Juke<sup>S19</sup></h2>
         <h2>News Cycle<sup>F19</sup></h2>
         <h2 class='highlight'>Chernobyl Nuclear Disaster<sup>F19</sup></h2>
         <h2>Chernobyl 1986<sup>F19</sup></h2>
@@ -49,6 +47,7 @@
         <h2>Rhythm &amp; Blues<sup>S19</sup></h2>
         <h2>Helvetica Frequence<sup>S19</sup></h2>
         <h2>Gumdex<sup>S18</sup></h2>
+        <h2>Rockadex<sup>S18</sup></h2>
         <h2>Yale Daily News<sup>F18</sup></h2>
         <h2>The Phillipian<sup>F14&ndash;W17</sup></h2>
         <h2>Charticons<sup>F16</sup></h2>
@@ -70,58 +69,9 @@
         <h2>State of the Academy<sup>S16,S17</sup></h2>
         <h2>Freshman Survey<sup>F16</sup></h2>
       </div>
-      <!-- <div class='row'>
-        <h3>Links</h3>
-        <h2>GitHub</h2>
-        <h2>Dribbble</h2>
-        <h2>LinkedIn</h2>
-        <h2>Email</h2>
+      <!-- <div class='row spotlight'>
+        <h2>this is a thing yuh</h2>
       </div> -->
     </div>
-    <script type='text/javascript'>
-      var h2s = document.getElementsByTagName('h2');
-      function lastOfLine(obj) {
-        var last = obj;
-
-        if (last.nextElementSibling) {
-          while (Math.abs(last.nextElementSibling.getBoundingClientRect().top - obj.getBoundingClientRect().top) < 2) {
-            last = last.nextElementSibling;
-
-            if (!last.nextElementSibling) {
-              return last;
-            }
-          }
-        }
-
-        return last;
-      }
-
-      for (i in h2s) {
-        h2s[i].onclick = function() {
-          document.body.style.background = 'black';
-          this.classList.add('active');
-          var last = lastOfLine(this);
-
-          var div = document.createElement('div');
-          div.setAttribute('class', 'row spotlight');
-
-          var iframe = document.createElement('iframe');
-          iframe.setAttribute('src', 'http://ruddfawcett.com');
-          iframe.setAttribute('scrolling', 'yes');
-
-          div.appendChild(iframe);
-
-          if (last.nextSibling) {
-            this.parentNode.insertBefore(div, last.nextSibling);
-          }
-          else {
-            this.parentNode.appendChild(div);
-          }
-
-          for (i in h2s) {
-            h2s[i].onclick = null;
-          }
-        };
-      }
-    </script>
+    <script src='./index.js' type='text/javascript'></script>
 </html>
