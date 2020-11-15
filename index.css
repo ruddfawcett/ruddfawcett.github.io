@@ -1,145 +1,41 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: left;
 }
 
-.container {
+h1 {
+  max-width: 880px;
   padding: 0 5vw;
   margin: 140px auto;
-  max-width: 880px;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 60px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+/* h1 {
+  max-width: 60vw;
+  padding: 0 5vw;
+  margin: 10vw auto;
   font-weight: normal;
-}
+  font-size: 3.25vw;
+  line-height: 4.25vw;
+} */
 
 a, a:visited {
   color: black;
   text-decoration: none;
 }
 
-h1 {
-  font-size: 46px;
-  line-height: 60px;
-  margin: 60px 0;
-}
-
-.content a {
-  /* color: royalblue; */
-}
-
-h2 {
-  font-size: 32px;
-  line-height: 38px;
-  padding-right: 12px;
-  display: inline-block;
-}
-
-h2:hover {
-  cursor: help;
-}
-
-h3 {
-  display: inline;
-  vertical-align: baseline;
-  font-weight: 300;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding-right: 6px;
-}
-
-h1 sup {
-  display: inline;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 20px;
-  padding-left: 4px;
-}
-
-h2 sup {
-  display: inline;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 14px;
-  padding-left: 4px;
-}
-
-p {
-  line-height: 20px;
-  display: table;
-  padding: 4px 0 1px 0;
-}
-
-.highlight {
-  font-family: serif;
-  font-size: 35px;
-}
-
-h2.active {
-  color: white;
-}
-
-.row {
-  padding: 20px 40px;
-}
-
-.row.spotlight {
-  padding: 60px 0;
-}
-
-.row.spotlight iframe {
-  outline: none;
-  border: none;
-  width: 100%;
-  height: auto;
-}
-
-.row:first-child {
-  padding: 0 0 60px 0;
-}
-
-.col {
-  padding: 0 42px 0 0;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
-img {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-}
-
-.col .group {
-  padding-bottom: 42px;
-}
-
 ::selection {
-  background: yellow;
-  padding-left: 12px;
+  background: clear;
 }
+
 ::-moz-selection {
-  background: yellow;
-  padding-left: 12px;
-}
-
-@media (max-width: 1070px) {
-
+  background: clear;
 }
 
 @media (max-width: 740px) {
-  h1 {
+  /* h1 {
     font-size: 32px;
     line-height: 40px;
-  }
-
-  h2 {
-    font-size: 24px;
-    line-height: 28px;
-  }
+  } */
 }
