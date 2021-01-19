@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html>
+  <head>
+    {% include _common.html %}
+    <title>{{ site.title }} / Work</title>
+    <!-- {{ page.title }} -->
+  </head>
+  <body>
+    <div class='wrapper'>
+      <header>
+        <!-- <h1>{{ page.title }}<span class='regular'>{{ page.contributor }}</span></h1> -->
+      </header>
+      <main>
+        <div class='contents'>
+          {{ contents }}
+        </div>
+      </main>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>

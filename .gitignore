@@ -1,6 +1,5 @@
-portfolio.html
-robots.txt
-.DS_STORE
-docsets/*
-cutout.png
-assets/images/cutout.png
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
