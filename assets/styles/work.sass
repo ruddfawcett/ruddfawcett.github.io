@@ -1,0 +1,38 @@
+---
+---
+
+@import 'reset'
+@import 'base'
+@import 'layout'
+@import 'typography'
+
+p
+  font-size: 16px
+  line-height: 20px
+
+.grid
+  display: grid
+  grid-template-columns: repeat(2, minmax(160px, 1fr))
+  grid-template-rows: 1fr
+  grid-gap: 20px
+
+  div
+    display: flex
+    padding-bottom: 40px
+
+    &.work
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      background-color: black
+
+      &:before
+        content: ""
+        display: block
+        height: 0
+        width: 0
+        padding-bottom: calc(9/16 * 100%)
+
+@media(max-width: 1080px)
+  .grid
+    grid-template-columns: repeat(1, minmax(160px, 1fr))

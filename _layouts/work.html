@@ -1,25 +1,27 @@
 ---
-layout: compress
 ---
 
 <!doctype html>
 <html>
   <head>
     {% include _common.html %}
-    <title>{{ site.title }} / Work</title>
-    <!-- {{ page.title }} -->
+    <link rel='stylesheet' href='{{ 'assets/styles/work.css' | relative_url }}' />
+    <title>{{ site.title }} / {{ page.title }}</title>
   </head>
   <body>
-    <div class='wrapper'>
-      <header>
-        <!-- <h1>{{ page.title }}<span class='regular'>{{ page.contributor }}</span></h1> -->
-      </header>
-      <main>
-        <div class='contents'>
-          {{ contents }}
+    <main>
+      <div class='grid'>
+        <div>
+          <p>{{ page.title }} <br />{{ page.shortdate }}</p>
         </div>
-      </main>
-    </div>
+        <div>
+          <p>{{ page.description }}</p>
+        </div>
+        {% for i in (1..page.images) %}
+        <div class='work' style="background-image: url('../assets/work/{{ page.slug }}/{{ i }}.jpg')"></div>
+        {% endfor %}
+      </div>
+    </main>
 
     {% include analytics.html %}
   </body>
