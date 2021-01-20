@@ -2,22 +2,19 @@
 ---
 
 @import "reset"
+@import "layout"
 @import "typography"
 @import "base"
 
 h1
   max-width: 880px
-  padding: 0 5vw
-  margin: 140px auto
   font-weight: normal
+  margin: 0 auto
+  padding: 0 5vw
   font-size: 46px
   line-height: 60px
 
-@media (max-width: 740px)
+@media (max-width: 740px), (pointer: coarse)
   h1
-    font-size: 32px
-    line-height: 40px
-
-  h2
     font-size: 24px
-    line-height: 28px
+    line-height: 32px
