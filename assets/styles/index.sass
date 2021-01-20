@@ -1,10 +1,10 @@
 ---
 ---
 
-@import "reset"
-@import "layout"
-@import "typography"
-@import "base"
+@import 'base'
+@import 'reset'
+@import 'layout'
+@import 'typography'
 
 h1
   max-width: 880px
@@ -13,6 +13,7 @@ h1
   padding: 0 5vw
   font-size: 46px
   line-height: 60px
+  @include theme('color', $primary-color-dark)
 
 @media (max-width: 740px), (pointer: coarse)
   h1

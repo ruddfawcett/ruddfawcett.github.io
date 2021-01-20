@@ -1,3 +1,8 @@
+@import 'themes'
+
+body
+  @include theme('background', $primary-color-light)
+
 a, a:visited
-  color: black
+  @include theme('color', $primary-color-dark)
   text-decoration: 1px solid underline
