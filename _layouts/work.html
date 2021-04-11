@@ -15,10 +15,14 @@
           <p>{{ page.title }} <br />{{ page.shortdate }}</p>
         </div>
         <div>
-          <p>{{ page.description }}</p>
+          {% if page.description %}
+            <p>{{ page.description | markdownify }}</p>
+          {% else %}
+            {{ content | markdownify }}
+          {% endif %}
         </div>
         {% for i in (1..page.images) %}
-        <div class='work' style="background-image: url('../assets/work/{{ page.slug }}/{{ i }}.jpg')"></div>
+        <div class='work' style="background-image: url('../assets/work/{{ page.slug }}/min/{{ i }}.jpg')"></div>
         {% endfor %}
       </div>
     </main>

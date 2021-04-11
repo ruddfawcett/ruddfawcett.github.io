@@ -9,7 +9,16 @@
 p
   font-size: 16px
   line-height: 20px
+  margin-bottom: 12px
   @include theme('color', $primary-color-dark)
+  display: inline-block
+
+  &:empty
+    display: none
+    margin-bottom: 0
+
+  &:last-of-type
+    margin-bottom: 0
 
 .grid
   display: grid
@@ -18,7 +27,6 @@ p
   grid-gap: 24px
 
   div
-    display: flex
     padding-bottom: 36px
 
     &.work

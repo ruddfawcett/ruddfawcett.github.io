@@ -27,3 +27,8 @@ defaults:
       type: "yale"
     values:
       layout: "work"
+  - scope:
+      path: ""
+      type: "rca"
+    values:
+      layout: "work"
